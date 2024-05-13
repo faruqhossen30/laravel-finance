@@ -42,7 +42,7 @@ Route::get('/test', function () {
 
 Route::get('/',[HomepageController::class,'index'])->name('homepage');
 Route::get('/blogs',[BlogpageController::class,'blogPage'])->name('blog.page');
-Route::get('/singleblog',[SingleBlogController::class,'singleBlog'])->name('single.blog');
+Route::get('/singleblog/{id}',[SingleBlogController::class,'singleBlog'])->name('single.blog');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

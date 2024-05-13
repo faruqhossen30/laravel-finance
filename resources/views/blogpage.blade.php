@@ -16,7 +16,7 @@
             @foreach ($blogs as $blog)
                 <!-- Card -->
                 <a class="group flex flex-col h-full border border-gray-200 hover:border-transparent hover:shadow-lg transition-all duration-300 rounded-xl p-5 dark:border-neutral-700 dark:hover:border-transparent dark:hover:shadow-black/40"
-                    href="#">
+                    href="{{route('single.blog',$blog->id)}}">
                     <div class="aspect-w-16 aspect-h-11">
                         <img class="w-full object-cover rounded-xl"
                             src="{{asset('storage/' .$blog->thumbnail)}}"
