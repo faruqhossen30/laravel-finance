@@ -49,14 +49,12 @@
 
                                         <td
                                             class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-200">
-                                            @if ($category->thumbnail)
+
                                                 <img src="{{ asset('storage/' . $category->thumbnail) }}" class="h-6 w-auto"
                                                     alt="thumbnail">
-                                            @else
-                                                <img src="{{ asset('storage/' . $category->thumbnail) }}" class="h-6 w-auto"
-                                                    alt="thumbnail">
-                                            @endif
-                                        @endisset
+
+
+
                                     </td>
                                     <td
                                         class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-200">
