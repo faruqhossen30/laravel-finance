@@ -73,7 +73,7 @@ class BlogController extends Controller
         ];
 
         if($request->file('thumbnail')){
-            $file_name = $request->file('thumbnail')->store('thumbnail/blog/');
+            $file_name = $request->file('thumbnail')->store('thumbnail/blog');
             $data['thumbnail'] = $file_name;
         }
 
@@ -156,7 +156,7 @@ class BlogController extends Controller
         ];
 
         if($request->file('thumbnail')){
-            $file_name = $request->file('thumbnail')->store('thumbnail/blog/');
+            $file_name = $request->file('thumbnail')->store('thumbnail/blog');
             $data['thumbnail'] = $file_name;
         }
 

@@ -16,6 +16,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ReviewpageController;
 use App\Http\Controllers\ReviewSubmitController;
 use App\Http\Controllers\ServicepageController;
+use App\Http\Controllers\SingleBlogController;
 use App\Http\Controllers\TearmsController;
 use Illuminate\Support\Facades\Route;
 
@@ -39,7 +40,9 @@ Route::get('/test', function () {
     return view('test');
 });
 
-
+Route::get('/',[HomepageController::class,'index'])->name('homepage');
+Route::get('/blogs',[BlogpageController::class,'blogPage'])->name('blog.page');
+Route::get('/singleblog',[SingleBlogController::class,'singleBlog'])->name('single.blog');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

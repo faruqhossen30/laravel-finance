@@ -44,7 +44,7 @@
 
                             </div>
                             <div class="col-span-12 lg:col-span-4 bg-white dark:bg-gray-800 p-4 rounded-lg">
-                                {{-- <x-form.thumbnail-single /> --}}
+
 
                                 <input class="dropify" type="file" id="myDropify" name="thumbnail">
                                 <x-form.textarea label="Project Description" name="project_description" />

@@ -21,6 +21,7 @@ class DatabaseSeeder extends Seeder
             AdminSeeder::class,
             CategorySeeder::class,
             PermissionSeeder::class,
+            BlogSeeder::class,
 
         ]);
         // \App\Models\User::factory(50)->create();
