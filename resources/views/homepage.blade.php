@@ -20,15 +20,10 @@
     </section>
     <!-- End Hero -->
 
-    <section class="container mx-auto -mt-56">
+    <section class="container mx-auto px-3 lg:px-0 -mt-56">
         <div class="grid grid-cols-12 gap-5">
             @foreach ($categories as $category)
-                <div class="col-span-3 border flex flex-col items-center py-10 shadow-lg bg-white rounded-lg">
-                    {{-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="w-10 h-10">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
-                    </svg> --}}
+                <div class="col-span-6 md:col-span-4 lg:col-span-3 border flex flex-col items-center py-10 shadow-lg bg-white rounded-lg">
                     <img src="{{ asset('storage/' . $category->thumbnail) }}" class="h-16 W-16 p-2"
                     alt="thumbnail">
                     <h3 class="text-sm sm:text-lg font-semibold text-gray-800 dark:text-neutral-200">
@@ -71,7 +66,10 @@
                     </div>
                     <!-- End Heading -->
 
+
                     <!-- Item -->
+                    @foreach ($approches as $key=> $approch)
+
                     <div class="flex gap-x-5 ms-1">
                         <!-- Icon -->
                         <div
@@ -79,7 +77,7 @@
                             <div class="relative z-10 size-8 flex justify-center items-center">
                                 <span
                                     class="flex flex-shrink-0 justify-center items-center size-8 border border-neutral-800 text-[#ff0] font-semibold text-xs uppercase rounded-full">
-                                    1
+                                   {{$key+1}}
                                 </span>
                             </div>
                         </div>
@@ -88,90 +86,15 @@
                         <!-- Right Content -->
                         <div class="grow pt-0.5 pb-8 sm:pb-12">
                             <p class="text-sm lg:text-base text-neutral-400">
-                                <span class="text-white">Market Research and Analysis:</span>
-                                Identify your target audience and understand their needs, preferences, and behaviors.
+                                <span class="text-white">{{$approch->title}} :</span>
+                             {!! $approch->description!!}
                             </p>
                         </div>
                         <!-- End Right Content -->
                     </div>
+                    @endforeach
                     <!-- End Item -->
 
-                    <!-- Item -->
-                    <div class="flex gap-x-5 ms-1">
-                        <!-- Icon -->
-                        <div
-                            class="relative last:after:hidden after:absolute after:top-8 after:bottom-0 after:start-4 after:w-px after:-translate-x-[0.5px] after:bg-neutral-800">
-                            <div class="relative z-10 size-8 flex justify-center items-center">
-                                <span
-                                    class="flex flex-shrink-0 justify-center items-center size-8 border border-neutral-800 text-[#ff0] font-semibold text-xs uppercase rounded-full">
-                                    2
-                                </span>
-                            </div>
-                        </div>
-                        <!-- End Icon -->
-
-                        <!-- Right Content -->
-                        <div class="grow pt-0.5 pb-8 sm:pb-12">
-                            <p class="text-sm lg:text-base text-neutral-400">
-                                <span class="text-white">Product Development and Testing:</span>
-                                Develop digital products or services that address the needs and preferences of your target
-                                audience.
-                            </p>
-                        </div>
-                        <!-- End Right Content -->
-                    </div>
-                    <!-- End Item -->
-
-                    <!-- Item -->
-                    <div class="flex gap-x-5 ms-1">
-                        <!-- Icon -->
-                        <div
-                            class="relative last:after:hidden after:absolute after:top-8 after:bottom-0 after:start-4 after:w-px after:-translate-x-[0.5px] after:bg-neutral-800">
-                            <div class="relative z-10 size-8 flex justify-center items-center">
-                                <span
-                                    class="flex flex-shrink-0 justify-center items-center size-8 border border-neutral-800 text-[#ff0] font-semibold text-xs uppercase rounded-full">
-                                    3
-                                </span>
-                            </div>
-                        </div>
-                        <!-- End Icon -->
-
-                        <!-- Right Content -->
-                        <div class="grow pt-0.5 pb-8 sm:pb-12">
-                            <p class="text-sm md:text-base text-neutral-400">
-                                <span class="text-white">Marketing and Promotion:</span>
-                                Develop a comprehensive marketing strategy to promote your digital products or services.
-                            </p>
-                        </div>
-                        <!-- End Right Content -->
-                    </div>
-                    <!-- End Item -->
-
-                    <!-- Item -->
-                    <div class="flex gap-x-5 ms-1">
-                        <!-- Icon -->
-                        <div
-                            class="relative last:after:hidden after:absolute after:top-8 after:bottom-0 after:start-4 after:w-px after:-translate-x-[0.5px] after:bg-neutral-800">
-                            <div class="relative z-10 size-8 flex justify-center items-center">
-                                <span
-                                    class="flex flex-shrink-0 justify-center items-center size-8 border border-neutral-800 text-[#ff0] font-semibold text-xs uppercase rounded-full">
-                                    4
-                                </span>
-                            </div>
-                        </div>
-                        <!-- End Icon -->
-
-                        <!-- Right Content -->
-                        <div class="grow pt-0.5 pb-8 sm:pb-12">
-                            <p class="text-sm md:text-base text-neutral-400">
-                                <span class="text-white">Launch and Optimization:</span>
-                                Launch your digital products or services to the market, closely monitoring their performance
-                                and user feedback.
-                            </p>
-                        </div>
-                        <!-- End Right Content -->
-                    </div>
-                    <!-- End Item -->
 
                     <a class="group inline-flex items-center gap-x-2 py-2 px-3 bg-[#ff0] font-medium text-sm text-neutral-800 rounded-full focus:outline-none"
                         href="#">
@@ -346,3 +269,8 @@
     <!-- End Features -->
     @include('inc.homepage.clients')
 @endsection
+
+@push('scripts')
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script src="{{ asset('plugin/Sortable.min.js') }}"></script>
+@endpush

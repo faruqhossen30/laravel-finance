@@ -3,10 +3,12 @@
 use App\Http\Controllers\Admin\Admin\RoleController;
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\AdminProfileController;
+use App\Http\Controllers\Admin\Approach\ApproachController;
 use App\Http\Controllers\Admin\Blog\BlogController;
 use App\Http\Controllers\Admin\DashboardController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\Client\ClientController;
 use App\Http\Controllers\Admin\Setting\AboutmeSettingController;
 use App\Http\Controllers\Admin\Setting\ChatSectionController;
 use App\Http\Controllers\Admin\Setting\ContactSettingController;
@@ -21,6 +23,8 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
     Route::resource('role', RoleController::class);
     Route::resource('admin', AdminController::class);
     Route::resource('blog', BlogController::class);
+    Route::resource('client', ClientController::class);
+    Route::resource('approach', ApproachController::class);
     Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
     // Route::resource('role', RoleController::class);
     // Start Work

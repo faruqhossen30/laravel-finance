@@ -1,9 +1,9 @@
 <!-- Card Blog -->
-<div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+<div class="container mx-auto px-3 lg:px-0">
     <!-- Title -->
-    <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
-        <h2 class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">The Blog</h2>
-        <p class="mt-1 text-gray-600 dark:text-neutral-400">See how game-changing companies are making the most of every
+    <div class="mx-auto text-center mb-10 lg:mb-14">
+        <h2 class="text-xl font-bold md:text-4xl md:leading-tight dark:text-white py-12">The Blog</h2>
+        <p class="mt-1 text-gray-600 dark:text-neutral-400 text-center">See how game-changing companies are making the most of every
             engagement with Preline.</p>
     </div>
     <!-- End Title -->
@@ -12,7 +12,7 @@
     <div class="grid grid-cols-12 gap-6">
         <!-- Card -->
         @foreach ($blogs as $blog)
-            <a class="col-span-3 group flex flex-col h-full border border-gray-200 hover:border-transparent hover:shadow-lg transition-all duration-300 rounded-xl p-5 dark:border-neutral-700 dark:hover:border-transparent dark:hover:shadow-black/40"
+            <a class="col-span-12 md:col-span-6 lg:col-span-3 group flex flex-col h-full border border-gray-200 hover:border-transparent hover:shadow-lg transition-all duration-300 rounded-xl p-5 dark:border-neutral-700 dark:hover:border-transparent dark:hover:shadow-black/40"
                 href="{{route('single.blog',$blog->id)}}">
 
                 <div class="my-6">
@@ -44,8 +44,8 @@
     <!-- End Grid -->
 
     <!-- Card -->
-    <div class="mt-12 text-center">
-        <a class="py-3 px-4 inline-flex items-center gap-x-1 text-sm font-medium rounded-full border border-gray-200 bg-white text-blue-600 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-blue-500 dark:hover:bg-neutral-800"
+    <div class=" text-center py-12">
+        <a class="py-4 px-4 inline-flex items-center gap-x-1 text-sm font-medium rounded-full border border-gray-200 bg-white text-blue-600 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-blue-500 dark:hover:bg-neutral-800"
             href="#">
             Read more
             <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
