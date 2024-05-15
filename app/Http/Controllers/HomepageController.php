@@ -12,11 +12,10 @@ class HomepageController extends Controller
 {
     public function index(){
 
-
-        $categories = Category::all();
+        $categories = Category::get();
         $blogs = Blog::get();
         $clients = Client::all();
         $approches = Appraoch::all();
-        return view('homepage',compact('categories','blogs','clients','approches'));
+        return view('homepage', compact('categories','blogs','clients','approches'));
     }
 }

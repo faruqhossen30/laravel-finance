@@ -1,3 +1,7 @@
+@php
+    use App\Models\Category;
+    $categories = Category::get();
+@endphp
 <nav class="container mx-auto px-3 lg:px-0 bg-white border-gray-200 dark:bg-gray-900">
     <div class="flex flex-wrap items-center justify-between mx-auto py-4">
         <a href="{{ route('homepage') }}" class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -61,8 +65,7 @@
                     <li>
                         <a href="#"
                             class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
-
-                            aria-current="page">{{$category->name}}</a>
+                            aria-current="page">{{ $category->name }}</a>
                     </li>
                 @endforeach
                 {{-- <li>
