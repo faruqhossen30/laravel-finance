@@ -1,5 +1,5 @@
 <!-- Card Blog -->
-<div class="container mx-auto px-3 lg:px-0">
+<div class="container mx-auto px-3 lg:px-0 bg-white">
     <!-- Title -->
     <div class="mx-auto text-center mb-10 lg:mb-14">
         <h2 class="text-xl font-bold md:text-4xl md:leading-tight dark:text-white py-12">The Blog</h2>

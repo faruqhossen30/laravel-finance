@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\AboutpageController;
+use App\Http\Controllers\Admin\Loan\PersonalLoneController;
 use App\Http\Controllers\Ajax\GalleryAjaxController;
 use App\Http\Controllers\ArticlesController;
 use App\Http\Controllers\BlogComtroller;
@@ -43,6 +44,7 @@ Route::get('/test', function () {
 Route::get('/',[HomepageController::class,'index'])->name('homepage');
 Route::get('/blogs',[BlogpageController::class,'blogPage'])->name('blog.page');
 Route::get('/singleblog/{id}',[SingleBlogController::class,'singleBlog'])->name('single.blog');
+Route::get('/personal-loan/',[PersonalLoneController::class,'personalLoan'])->name('personal.loan');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
