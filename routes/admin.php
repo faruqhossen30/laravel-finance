@@ -30,7 +30,6 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
     // Start Work
 
     Route::resource('category',           CategoryController::class);
-
     Route::resource('user',               UserController::class);
 
     Route::get('profile/',[AdminProfileController::class,'adminProfile'])->name('admin.profile');

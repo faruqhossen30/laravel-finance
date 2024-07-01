@@ -19,8 +19,6 @@ class WebsiteSettingController extends Controller
         // return  $site;
         return view('admin.setting.website-setting',compact('site'));
     }
-
-
     public function websitestoresetting(Request $request){
 
 // return $request->all();
@@ -31,9 +29,7 @@ class WebsiteSettingController extends Controller
             $extension = $imagethumbnail->getClientOriginalExtension();
             $thumbnailname = Str::uuid() . '.' . $extension;
             $request->file('logo')->move(public_path('uploads/logo/'), $thumbnailname);
-            // $data['logo'] = $thumbnailname;
         }
-
         WebsiteSetting::updateOrInsert([
             'id'=>1
         ],[
@@ -53,13 +49,9 @@ class WebsiteSettingController extends Controller
             'youtube_link'        => $request->youtube_link,
             'behance_link'        => $request->behance_link,
             'dribbble_link'       => $request->dribbble_link,
-            'flickr_link'         => $request->flickr_link,
-            'monogram_link'       => $request->monogram_link,
-            'intro_video_link'    => $request->intro_video_link,
             'logo'                => $thumbnailname,
-            'info'                => $request->info,
-        ]);
 
+        ]);
         return redirect()->back();
     }
 

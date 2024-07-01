@@ -16,6 +16,7 @@ use App\Http\Controllers\PricepageController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ReviewpageController;
 use App\Http\Controllers\ReviewSubmitController;
+use App\Http\Controllers\SearchpageController;
 use App\Http\Controllers\ServicepageController;
 use App\Http\Controllers\SingleBlogController;
 use App\Http\Controllers\TearmsController;
@@ -42,9 +43,11 @@ Route::get('/test', function () {
 });
 
 Route::get('/',[HomepageController::class,'index'])->name('homepage');
-Route::get('/blogs',[BlogpageController::class,'blogPage'])->name('blog.page');
-Route::get('/singleblog/{id}',[SingleBlogController::class,'singleBlog'])->name('single.blog');
-Route::get('/personal-loan/',[PersonalLoneController::class,'personalLoan'])->name('personal.loan');
+Route::get('/blogs',[BlogpageController::class,'blogPage'])->name('blogpage');
+Route::get('/blogs/{slug}',[BlogpageController::class,'categoryBlogPage'])->name('blogpage.category');
+Route::get('/singleblog/{slug}',[SingleBlogController::class,'singleBlog'])->name('single.blog');
+Route::get('/personal-loan',[PersonalLoneController::class,'personalLoan'])->name('personal.loan');
+Route::get('search',[SearchpageController::class,'search'])->name('search');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

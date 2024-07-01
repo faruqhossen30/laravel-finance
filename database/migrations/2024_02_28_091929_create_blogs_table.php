@@ -20,7 +20,7 @@ return new class extends Migration
             $table->longText('description');
             $table->string('thumbnail')->nullable();
             $table->unsignedBigInteger('user_id');
-            $table->string('meta_title')->nullable();
+            $table->string('meta_title',500)->nullable();
             $table->string('meta_description')->nullable();
             $table->string('meta_keyword',1000)->nullable();
             $table->string('color')->nullable();

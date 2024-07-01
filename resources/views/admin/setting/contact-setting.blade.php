@@ -64,12 +64,6 @@
                                 placeholder="+8801000000000">
                         </div>
                     </div>
-
-                    {{-- <x-form.input label="telephone_no" value="{{ $site->email }}" name="email" /> --}}
-                    {{-- <x-form.input label="Telephone_no" value="{{ $site->telephone_no }}" name="telephone_no"  /> --}}
-                    {{-- <x-form.input label="Mobile_no" value="{{ $site->mobile_no }}" name="mobile_no" /> --}}
-                    {{-- <x-form.input label="Instagram_link" value="{{ $site->instagram_link }}" name="instagram_link" /> --}}
-                    {{-- <x-form.input label="Facebook_link" value="{{ $site->facebook_link }}" name="facebook_link" /> --}}
                 <div>
                     <x-form.submit-button />
                 </div>
