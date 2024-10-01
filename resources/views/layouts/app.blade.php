@@ -8,7 +8,7 @@
         content="Get started with a free and open-source admin dashboard layout built with Tailwind CSS and Flowbite featuring charts, widgets, CRUD layouts, authentication pages, and more">
     <meta name="author" content="Themesberg">
     <meta name="generator" content="Hugo 0.122.0">
-
+    <link rel="icon" type="image/x-icon" href="{{ asset('img/icon/Favicon.svg') }}">
     <title>Website</title>
     <meta name="theme-color" content="#ffffff">
 
@@ -45,7 +45,7 @@
 </head>
 
 <body>
-@include('layouts.navbar')
+    @include('layouts.navbar')
     @yield('content')
     @include('layouts.footer')
     <script>

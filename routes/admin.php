@@ -9,8 +9,7 @@ use App\Http\Controllers\Admin\DashboardController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\Client\ClientController;
-use App\Http\Controllers\Admin\Setting\AboutmeSettingController;
-use App\Http\Controllers\Admin\Setting\ChatSectionController;
+use App\Http\Controllers\Admin\Loan\PersonalLoneController;
 use App\Http\Controllers\Admin\Setting\ContactSettingController;
 use App\Http\Controllers\Admin\Setting\SiteSettingController;
 use App\Http\Controllers\Admin\Setting\SocialmediaSettingController;
@@ -26,9 +25,6 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
     Route::resource('client', ClientController::class);
     Route::resource('approach', ApproachController::class);
     Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
-    // Route::resource('role', RoleController::class);
-    // Start Work
-
     Route::resource('category',           CategoryController::class);
     Route::resource('user',               UserController::class);
 

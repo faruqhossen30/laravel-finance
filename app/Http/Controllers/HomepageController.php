@@ -18,6 +18,7 @@ class HomepageController extends Controller
 
         $clients = Client::all();
         $approches = Appraoch::all();
+
         return view('homepage', compact('categories','blogs','clients','approches'));
     }
 }
