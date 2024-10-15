@@ -54,9 +54,17 @@ class AdminController extends Controller
             'email' => $request->email,
             'password' => Hash::make($request->password),
 
+
         ];
+
+        if($request->file('thumbnail')){
+            $file_name = $request->file('thumbnail')->store('thumbnail/admin');
+            $data['thumbnail'] = $file_name;
+        }
         // return $data;
         $ids = array_map('intval', $request->role_ids);
+
+        // return $data;
         $user = User::create($data);
         $user->assignRole($ids);
         return redirect()->route('admin.index')->with('create',' Admin Successfully Created');
@@ -93,6 +101,10 @@ class AdminController extends Controller
         if(!Auth::user()->can('admin update')){
             abort(403);
         }
+
+
+// return $request->all();
+
         $ids = array_map('intval', $request->role_ids);
         $admin = User::firstWhere('id', $id);
 
@@ -102,6 +114,11 @@ class AdminController extends Controller
             'password' => Hash::make($request->password),
 
         ]);
+
+        if($request->file('thumbnail')){
+            $file_name = $request->file('thumbnail')->store('thumbnail/admin');
+            $data['thumbnail'] = $file_name;
+        }
 
         if ($request->role_ids) {
             $admin->roles()->detach();

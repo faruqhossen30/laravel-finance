@@ -22,7 +22,7 @@
                             {{ $blog->title }}
                         </h3>
                         <p class="mt-5 text-gray-600 dark:text-neutral-400">
-                            {{ $blog->short_description }}
+                            {{ Str::words($blog->short_description, 15, '...') }}
                         </p>
                     </div>
                     <div class="pb-2">
@@ -31,7 +31,7 @@
                     </div>
                     <div class="mt-auto flex items-center gap-x-3">
                         <img class="size-8 rounded-full"
-                            src="{{asset('storage/' . $blog->thumbnail)}}"
+                            src="{{asset('storage/' . $blog->user->thumbnail)}}"
                             alt="Image Description">
 
                         <div>

@@ -19,7 +19,7 @@
             <div class="card-header">
                 <div class="p-6">
                     <div class="col-span-12 lg:col-span-8 bg-white dark:bg-gray-800 p-4 rounded-lg">
-                    <form action="{{ route('admin.store') }}" method="POST">
+                    <form action="{{ route('admin.store') }}" method="POST" enctype="multipart/form-data">
                         @csrf
                         <x-form.input name="name" label="Name" />
                         <x-form.input name="email" label="Email" type="email" />
@@ -40,6 +40,10 @@
                             @enderror
                         </div>
 
+                        <div class="col-span-12 lg:col-span-4 bg-white dark:bg-gray-800 p-4 rounded-lg">
+                            <input class="dropify" type="file" id="myDropify" name="thumbnail">
+                        </div>
+
                         <x-form.input name="password" label="Password" type="password" />
                         <x-form.input name="password_confirmation" label="Confirm Password" type="password" />
                         <x-form.submit-button />
@@ -54,15 +58,38 @@
 @endsection
 
 @push('styles')
+{{-- <link rel="stylesheet" href="{{ asset('css/dropify.min.css') }}"> --}}
 <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+{{-- <style>
+    .dropify-message p {
+        font-size: 24px
+    }
+</style> --}}
 @endpush
 
 @push('scripts')
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    {{-- <script src="{{ asset('js/dropify.min.js') }}"></script> --}}
     <script>
         $(document).ready(function() {
             $('.js-example-basic-multiple').select2();
         });
     </script>
+
+
+{{-- <script>
+    $(document).ready(function() {
+        $('.dropify').dropify({
+            messages: {
+                'default': 'Drag and drop a file here or click',
+                'replace': 'Drag and drop or click to replace',
+                'remove': 'Remove',
+                'error': 'Ooops, something wrong happended.'
+            }
+        });
+
+    });
+</script> --}}
+
 @endpush

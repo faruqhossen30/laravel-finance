@@ -13,10 +13,16 @@ class AdminSeeder extends Seeder
      */
     public function run(): void
     {
+
+        $email = 'admin@gmail.com';
+
+        $gravatarUrl = 'https://www.gravatar.com/avatar/' . md5(strtolower(trim($email))) . '?s=200&d=identicon';
+
         User::create([
             'name'=>'Super Admin',
             'email'=>'admin@gmail.com',
-            'password'=>Hash::make('123')
+            'password'=>Hash::make('123'),
+            'thumbnail' =>   $gravatarUrl
         ]);
     }
 }
