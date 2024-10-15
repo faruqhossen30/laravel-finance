@@ -31,11 +31,11 @@
                     </div>
                     <div class="mt-auto flex items-center gap-x-3">
                         <img class="size-8 rounded-full"
-                            src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80"
+                            src="{{asset('storage/' . $blog->thumbnail)}}"
                             alt="Image Description">
 
                         <div>
-                            <h5 class="text-sm text-gray-800 dark:text-neutral-200">By Lauren Waller</h5>
+                            <h5 class="text-sm text-gray-800 dark:text-neutral-200">{{$blog->user->name}}</h5>
                         </div>
                     </div>
                 </a>

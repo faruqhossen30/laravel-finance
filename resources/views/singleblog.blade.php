@@ -133,7 +133,7 @@
 
   <!-- Sticky Share Group -->
   <div class="sticky bottom-6 inset-x-0 text-center">
-    <div class="inline-block bg-white shadow-md rounded-full py-3 px-4 dark:bg-neutral-800">
+    <div class="inline-block bg-white shadow-md rounded-full py-3 my-6 px-4 dark:bg-neutral-800">
       <div class="flex items-center gap-x-1.5">
         <!-- Button -->
         <div class="hs-tooltip inline-block">
@@ -164,7 +164,7 @@
         <div class="block h-3 border-e border-gray-300 mx-3 dark:border-neutral-600"></div>
 
         <!-- Button -->
-        <div class="hs-dropdown relative inline-flex">
+        <div class="hs-dropdown relative inline-flex ">
           <button type="button" id="blog-article-share-dropdown" class="hs-dropdown-toggle flex items-center gap-x-2 text-sm text-gray-500 hover:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200">
             <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" x2="12" y1="2" y2="15"/></svg>
             Share

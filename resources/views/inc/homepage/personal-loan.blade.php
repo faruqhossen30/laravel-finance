@@ -2,9 +2,8 @@
 <section class="bg-gray-50 py-24">
     <div class="container mx-auto">
         <h1 class="text-3xl font-medium px-3">Personal Loan Calculator</h1>
-        <p class="px-3 py-8"><?php echo date('M d, Y'); ?>
         </p>
-        <p class="p-2">
+        <p class="p-4">
             This personal loan calculator will help you determine the monthly payments on a loan. To see your estimated
             monthly payments and total interest you'll pay, just enter the loan amount, loan term, and interest rate in
             the fields below and click calculate.
@@ -15,7 +14,7 @@
             <div class="grid grid-cols-12 gap-6">
                 <!-- Loan Info Section -->
                 <div class="lg:col-span-4 sm:col-span-12 sm:p-5">
-                    <div class="bg-gray-100 p-5 border border-gray-400">
+                    <div class="bg-gray-100 px-5 border border-gray-400">
                         <h1 class="font-bold text-xl py-5">Loan Info</h1>
 
                         <!-- Loan Amount -->

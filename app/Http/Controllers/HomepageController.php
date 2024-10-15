@@ -14,8 +14,8 @@ class HomepageController extends Controller
 
         $categories = Category::with('blogs')->get();
         // return  $categories ;
-        $blogs = Blog::take(4)->latest()->get();
-
+        $blogs = Blog::with('user')->take(4)->latest()->get();
+// return    $blogs;
         $clients = Client::all();
         $approches = Appraoch::all();
 

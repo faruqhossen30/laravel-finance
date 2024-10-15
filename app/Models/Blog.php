@@ -28,5 +28,11 @@ class Blog extends Model
     {
         return $this->belongsToMany(Category::class, 'blog_categories');
     }
+    public function user()
+    {
+        return $this->hasOne(User::class, 'id','user_id');
+    }
+
+
 
 }

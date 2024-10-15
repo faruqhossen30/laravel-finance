@@ -13,7 +13,7 @@
 
                     <div class=" lg:col-span-4  sm:col-span-12 sm:p-5">
 
-                        <div class="bg-gray-100 p-5  border border-gray-400">
+                        <div class="bg-gray-100 py-5   border border-gray-400">
                             <h1 class="font-bold text-xl py-5">Loan info</h1>
 
                             <div class="mb-5">
