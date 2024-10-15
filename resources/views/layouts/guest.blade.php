@@ -19,7 +19,7 @@
             <div>
                 <a href="{{route('homepage')}}">
                     {{-- <x-application-logo class="w-20 h-20 fill-current text-gray-500" /> --}}
-                    <img src="https://flowbite.com/images/logo.svg" alt="Mono Deep" class="w-20 h-20 rounded-full ring-2">
+                    <img src="{{asset('img/icon/Logo-Png-finance.png')}}" alt="Mono Deep" class=" h-20 ">
                 </a>
             </div>
 

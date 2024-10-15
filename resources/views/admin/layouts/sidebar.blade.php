@@ -81,11 +81,6 @@
                     @endcanany
                     <!-------------Admin End----------->
 
-
-
-
-
-
                     <!-----------Blog start------------>
                     @canany(['blog list', 'software list'])
                         <li>
@@ -122,7 +117,6 @@
                         </li>
                     @endcanany
                     <!------------Blog end------------->
-
                     <!----------homepage start------------->
                     <li>
                         <button type="button"
