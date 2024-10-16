@@ -2,13 +2,11 @@
 
 
 use App\Http\Controllers\Admin\Loan\PersonalLoneController;
-use App\Http\Controllers\BlogComtroller;
 use App\Http\Controllers\AboutpageController;
 use App\Http\Controllers\BlogpageController;
 use App\Http\Controllers\HomepageController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SearchpageController;
-use App\Http\Controllers\ServicepageController;
 use App\Http\Controllers\SingleBlogController;
 use Illuminate\Support\Facades\Route;
 
@@ -46,8 +44,8 @@ Route::post('/personal-loan/calculate', [PersonalLoneController::class, 'calcula
 Route::get('search',[SearchpageController::class,'search'])->name('search');
 
 Route::middleware('auth')->group(function () {
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::get('/profile',    [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile',  [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 

@@ -3,9 +3,10 @@
     <!-- Hero -->
     @include('inc.homepage.herosection')
     <!-- End Hero -->
-    @include('category')
+    {{-- @include('category') --}}
     <!--calculator start --->
-    @include('inc.homepage.personal-loan')
+
+    @include('inc.homepage.calculator')
     <!--calculator end --->
     @include('inc.homepage.blog')
     <!-- Features -->

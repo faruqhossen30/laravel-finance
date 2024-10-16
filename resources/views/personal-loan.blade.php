@@ -1,4 +1,5 @@
-
+@extends('layouts.app')
+@section('content')
 <section class="bg-gray-50 py-24">
     <div class="container mx-auto">
         <h1 class="text-3xl font-medium px-3">Personal Loan Calculator</h1>
@@ -211,7 +212,7 @@
     </div>
 
 </section>
-
+@endsection
 @push('scripts')
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="{{ asset('plugin/Sortable.min.js') }}"></script>

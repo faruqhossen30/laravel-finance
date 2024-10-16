@@ -10,7 +10,6 @@ class PersonalLoneController extends Controller
 {
     public function personalLoan()
     {
-
         return view('personal-loan');
     }
 

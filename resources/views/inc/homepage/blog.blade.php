@@ -4,8 +4,8 @@
     <div class="container mx-auto px-3 lg:px-0 bg-gray-100">
         <!-- Title -->
         <div class="mx-auto text-center mb-10 lg:mb-14">
-            <h2 class="text-xl font-bold md:text-4xl md:leading-tight dark:text-white py-12">The Blog</h2>
-            <p class="mt-1 text-gray-600 dark:text-neutral-400 text-center">See how game-changing companies are making the most of every
+            <h2 class="text-[24px] font-bold md:text-4xl md:leading-tight dark:text-white  py-3 md:py-12">The Blog</h2>
+            <p class="mt-1 text-gray-600 text-xl dark:text-neutral-400 text-center">See how game-changing companies are making the most of every
                 engagement with Preline.</p>
         </div>
         <!-- End Title -->
@@ -14,7 +14,7 @@
         <div class="grid grid-cols-12 gap-6">
             <!-- Card -->
             @foreach ($blogs as $blog)
-                <a class="col-span-12 md:col-span-6 lg:col-span-3 group flex flex-col h-full border border-gray-200 hover:border-transparent hover:shadow-lg transition-all duration-300 rounded-xl p-5 dark:border-neutral-700 dark:hover:border-transparent dark:hover:shadow-black/40"
+                <a class="col-span-12 sm:col-span-6 md:col-span-6 lg:col-span-4 group flex flex-col h-full border border-gray-200 hover:border-transparent hover:shadow-lg transition-all duration-300 rounded-xl p-5 dark:border-neutral-700 dark:hover:border-transparent dark:hover:shadow-black/40"
                     href="{{route('single.blog',$blog->slug)}}">
 
                     <div class="my-6">
