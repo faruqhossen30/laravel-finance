@@ -31,7 +31,7 @@
                                             </button>
                                             <input type="hidden" name="thumbnail" value="{{ $adminprofile->thumbnail }}">
                                             <img class="max-h-60 w-auto rounded-full p-4"
-                                                src="{{ asset('uploads/galleries/' . $adminprofile->thumbnail) }}"
+                                                src="{{ asset('storage/' . $adminprofile->thumbnail) }}"
                                                 alt="thumbnail">
                                         </div>
                                     @else
