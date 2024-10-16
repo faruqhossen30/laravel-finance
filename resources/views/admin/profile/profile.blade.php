@@ -30,7 +30,7 @@
                                             </button>
                                             <input type="hidden" name="thumbnail" value="{{ $adminprofile->thumbnail }}">
                                             <img class="max-h-60 w-auto rounded-full p-4"
-                                                src="{{ asset('uploads/galleries/' . $adminprofile->thumbnail) }}"
+                                                src="{{ asset('storage/' . $adminprofile->thumbnail) }}"
                                                 alt="thumbnail">
                                         </div>
                                     @else
@@ -75,6 +75,7 @@
                                     <p class="col-span-3">{{ $adminprofile->email }}</p>
                                 </div>
 
+
                             </div>
                         </div>
 
@@ -106,13 +107,22 @@
                         <x-form.input name="email" label="Email" type="email" disable="disabled"
                             value="{{ $adminprofile->email }}" />
                         <x-form.input label="Name" name="name" value="{{ $adminprofile->name }}" />
+
+                            <div class="col-span-12 lg:col-span-4 bg-white dark:bg-gray-800 p-4 rounded-lg">
+                                <div class="col-span-3 pt-1 space-y-2">
+                                    <label for="thumbnail"
+                                        class="text-gray-500 dark:text-gray-500 text-sm font-medium">Image</label>
+                                    <input name="thumbnail" class="dropify" type="file" id="myDropify"
+                                        data-default-file="{{ asset('storage/' . $adminprofile->thumbnail) }}">
+                                </div>
+                            </div>
                         <x-form.submit-button title="Update Name" />
 
                     </div>
                 </div>
 
             </div>
-            @include('admin.inc.modal.photo-gallery')
+            {{-- @include('admin.inc.modal.photo-gallery') --}}
         </form>
     </main>
 @endsection
@@ -126,5 +136,34 @@
     </style>
 @endpush
 
+@push('styles')
+<link rel="stylesheet" href="{{ asset('css/dropify.min.css') }}">
+
+<style>
+    .dropify-message p {
+        font-size: 24px
+    }
+</style>
+@endpush
+
 @push('scripts')
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="{{ asset('js/dropify.min.js') }}"></script>
+
+
+
+<script>
+    $(document).ready(function() {
+        $('.dropify').dropify({
+            messages: {
+                'default': 'Drag and drop a file here or click',
+                'replace': 'Drag and drop or click to replace',
+                'remove': 'Remove',
+                'error': 'Ooops, something wrong happended.'
+            }
+        });
+
+    });
+</script>
+
 @endpush

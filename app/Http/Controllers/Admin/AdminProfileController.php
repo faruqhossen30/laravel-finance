@@ -19,22 +19,16 @@ class AdminProfileController extends Controller
    public function UpdateAdminProfile(Request $request){
 
 
-    $request->validate([
-        'name'      => 'required',
-
-        'thumbnail' => 'required',
-    ], [
-        'name.required'      => 'please enter your name',
-        'thumbnail.required' => 'please enter your thumbnail ',
-    ]);
     $adminid = Auth::user()->id;
+    $data = [
+        'name'      => $request->name,
+    ];
+    if($request->file('thumbnail')){
+        $file_name = $request->file('thumbnail')->store('thumbnail/adminprofile');
+        $data['thumbnail'] = $file_name;
+    }
+    User::firstwhere('id', $adminid)->update($data);
 
-    User::findOrFail($adminid)->update([
-        'name'   => $request->name,
-      'thumbnail' => $request->thumbnail,
-
-
-    ]);
     return redirect()->back()->with('success', 'successfully data added');
    }
 

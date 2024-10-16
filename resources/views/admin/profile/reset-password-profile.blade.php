@@ -75,6 +75,9 @@
                                     <p class="col-span-3">{{ $adminprofile->email }}</p>
                                 </div>
 
+
+
+
                             </div>
                         </div>
 
@@ -104,7 +107,7 @@
                 </div>
 
             </div>
-            @include('admin.inc.modal.photo-gallery')
+
         </form>
     </main>
 @endsection
