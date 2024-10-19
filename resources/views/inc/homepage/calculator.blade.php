@@ -12,7 +12,7 @@
                 <div class="grid grid-cols-12 sm:gap-2  lg:gap-3 gap-6">
                     <div class=" col-span-12 sm:col-span-6">
                         <a href="{{ route('personal.loan') }}">
-                            <div class="flex  space-x-2 px-3 py-3 rounded-md text-white bg-[#31e16feb] ">
+                            <div class="flex  space-x-2 px-3 py-3 rounded-md text-white bg-[#31e16feb] hover:bg-green-500">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     stroke-width="1.5" stroke="currentColor" class="h-10 w-10">
                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -22,9 +22,9 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-span-12 sm:col-span-6">
-                        <a href="#">
-                            <div class="flex  space-x-2 px-3 py-3 rounded-md text-white bg-[#31e16feb] ">
+                    <div class="col-span-12 sm:col-span-6 ">
+                        <a href="#" class="rounded-md">
+                            <div class="flex  space-x-2 px-3 py-3 rounded-md text-white bg-[#31e16feb] hover:bg-green-500 ">
                                 <svg class="w-10 h-10  dark:text-white" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
                                     viewBox="0 0 24 24">
@@ -41,7 +41,7 @@
                     </div>
                     <div class="col-span-12 sm:col-span-6">
                         <a href="{{route('personal.loan')}}">
-                        <div class="flex  space-x-2 px-3 py-3 rounded-md text-white bg-[#31e16feb] ">
+                        <div class="flex  space-x-2 px-3 py-3 rounded-md text-white bg-[#31e16feb] hover:bg-green-500 ">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                 stroke-width="1.5" stroke="currentColor" class="h-10 w-10">
                                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -53,7 +53,7 @@
                         </a>
                     </div>
                     <div class="col-span-12 sm:col-span-6">
-                        <div class="flex  space-x-2 px-3 py-3 rounded-md text-white bg-[#31e16feb] ">
+                        <div class="flex  space-x-2 px-3 py-3 rounded-md text-white bg-[#31e16feb] hover:bg-green-500 ">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="h-10 w-10 bi bi-credit-card" viewBox="0 0 16 16">
                                 <path
@@ -64,7 +64,7 @@
                         </div>
                     </div>
                     <div class="col-span-12 sm:col-span-6">
-                        <div class="flex  space-x-2 px-3 py-3 rounded-md text-white bg-[#31e16feb] ">
+                        <div class="flex  space-x-2 px-3 py-3 rounded-md text-white bg-[#31e16feb] hover:bg-green-500 ">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                 stroke-width="1.5" stroke="currentColor" class="h-10 w-10">
                                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -75,7 +75,7 @@
                         </div>
                     </div>
                     <div class="col-span-12 sm:col-span-6">
-                        <div class="flex  space-x-2 px-3 py-3 rounded-md text-white bg-[#31e16feb] ">
+                        <div class="flex  space-x-2 px-3 py-3 rounded-md text-white bg-[#31e16feb] hover:bg-green-500">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="h-10 w-10 bi bi-calculator" viewBox="0 0 16 16">
                                 <path
