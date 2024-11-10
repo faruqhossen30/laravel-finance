@@ -15,6 +15,7 @@
                 <div class="grid grid-cols-12 gap-5 ">
                     <div class="col-span-12 lg:col-span-8 bg-white dark:bg-gray-800 p-4 rounded-lg">
                         <x-form.input label="Category Name" name="name" value="{{$category->name}}" />
+                            <x-form.textarea label="Meta Description" name="meta_description" value="{{ $category->description }}" />
 
                     </div>
                     <div class="col-span-12 lg:col-span-4 bg-white dark:bg-gray-800 p-4 rounded-lg">

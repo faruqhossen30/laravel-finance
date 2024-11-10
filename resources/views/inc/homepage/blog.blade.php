@@ -4,9 +4,8 @@
     <div class="container mx-auto px-3 lg:px-0 bg-gray-100">
         <!-- Title -->
         <div class="mx-auto text-center mb-10 lg:mb-14">
-            <h2 class="text-[24px] font-bold md:text-4xl md:leading-tight dark:text-white  py-3 md:py-12">The Blog</h2>
-            <p class="mt-1 text-gray-600 text-xl dark:text-neutral-400 text-center">See how game-changing companies are making the most of every
-                engagement with Preline.</p>
+            <h2 class="text-[24px] font-bold md:text-4xl md:leading-tight dark:text-white  py-3 md:py-12">Financial Resources</h2>
+            <p class="mt-1 text-gray-600 text-xl dark:text-neutral-400 text-center">Stay up-to-date with the latest insights from the experts. We cover all the latest information and expert opinions from financial professionals.</p>
         </div>
         <!-- End Title -->
 

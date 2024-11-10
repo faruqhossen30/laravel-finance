@@ -51,7 +51,7 @@ class CategoryController extends Controller
             'name'      => $request->name,
             'slug'      => Str ::slug($request->name),
             'author_id' => Auth::user()->id,
-            // 'thumbnail' => $request->thumbnail,
+            'description' => $request->description,
         ];
         if($request->file('thumbnail')){
             $file_name = $request->file('thumbnail')->store('thumbnail/category');
@@ -95,7 +95,7 @@ class CategoryController extends Controller
             'name'      => $request->name,
             'slug'      => Str::slug($request->name),
             'author_id' => Auth::user()->id,
-            // 'thumbnail' => $request->thumbnail,
+            'description' => $request->description,
         ];
         if($request->file('thumbnail')){
             $file_name = $request->file('thumbnail')->store('thumbnail/category');

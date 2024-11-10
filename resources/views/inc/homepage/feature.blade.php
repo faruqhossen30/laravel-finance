@@ -4,7 +4,7 @@
         <div class="relative z-10 lg:grid lg:grid-cols-12 lg:gap-16 lg:items-center">
             <div class="mb-10 lg:mb-0 lg:col-span-6 lg:col-start-8 lg:order-2">
                 <h2 class="text-2xl text-gray-800 font-bold sm:text-3xl dark:text-neutral-200">
-                    Fully customizable rules to match your unique needs
+                    See what drives your credit score.
                 </h2>
 
                 <!-- Tab Navs -->
@@ -26,11 +26,11 @@
                             </svg>
                             <span class="grow ms-6">
                                 <span
-                                    class="block text-lg font-semibold hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-neutral-200">Advanced
-                                    tools</span>
+                                    class="block text-lg font-semibold hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-neutral-200">Debt Freedom</span>
                                 <span
-                                    class="block mt-1 text-gray-800 dark:hs-tab-active:text-gray-200 dark:text-neutral-200">Use
-                                    Preline thoroughly thought and automated libraries to manage your businesses.</span>
+                                    class="block mt-1 text-gray-800 dark:hs-tab-active:text-gray-200 dark:text-neutral-200">Debt Freedom
+                                    Discover practical strategies and resources to take control of your credit card debt and build a clear path to financial freedom.
+                                    </span>
                             </span>
                         </span>
                     </button>
@@ -49,11 +49,9 @@
                             </svg>
                             <span class="grow ms-6">
                                 <span
-                                    class="block text-lg font-semibold hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-neutral-200">Smart
-                                    dashboards</span>
+                                    class="block text-lg font-semibold hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-neutral-200">DTI Insights</span>
                                 <span
-                                    class="block mt-1 text-gray-800 dark:hs-tab-active:text-gray-200 dark:text-neutral-200">Quickly
-                                    Preline sample components, copy-paste codes, and start right off.</span>
+                                    class="block mt-1 text-gray-800 dark:hs-tab-active:text-gray-200 dark:text-neutral-200">Discover how your debt-to-income (DTI) ratio affects your creditworthiness and repayment ability.</span>
                             </span>
                         </span>
                     </button>
@@ -76,11 +74,9 @@
                             </svg>
                             <span class="grow ms-6">
                                 <span
-                                    class="block text-lg font-semibold hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-neutral-200">Powerful
-                                    features</span>
+                                    class="block text-lg font-semibold hs-tab-active:text-blue-600 text-gray-800 dark:hs-tab-active:text-blue-500 dark:text-neutral-200">Good Debt vs. Bad</span>
                                 <span
-                                    class="block mt-1 text-gray-800 dark:hs-tab-active:text-gray-200 dark:text-neutral-200">Reduce
-                                    time and effort on building modern look design with Preline only.</span>
+                                    class="block mt-1 text-gray-800 dark:hs-tab-active:text-gray-200 dark:text-neutral-200">Learn to distinguish between good and bad debt by asking key questions to see if taking on debt aligns with your financial goals.</span>
                             </span>
                         </span>
                     </button>

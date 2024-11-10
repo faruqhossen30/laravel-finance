@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('slug');
             $table->string('thumbnail')->nullable();
+            $table->string('description')->nullable();
             $table->string('author_id');
             $table->boolean('status')->default(1);
             $table->timestamps();

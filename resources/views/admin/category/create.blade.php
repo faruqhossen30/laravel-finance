@@ -20,6 +20,7 @@
                             <div class="col-span-12 lg:col-span-8 bg-white dark:bg-gray-800 p-4 rounded-lg">
                                 <x-form.input label="Category Name" name="name" />
 
+                                <x-form.textarea label="Description" name="description" />
                             </div>
                             <div class="col-span-12 lg:col-span-4 bg-white dark:bg-gray-800 p-4 rounded-lg">
                                 <input class="dropify" type="file" id="myDropify" name="thumbnail">
@@ -66,6 +67,4 @@
 
                 });
             </script>
-
-
         @endpush

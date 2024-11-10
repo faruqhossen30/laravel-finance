@@ -8,7 +8,7 @@
                 </div>
             </div>
             <div class="col-span-12 lg:col-span-7 px-3">
-                <h2 class="text-[26px] sm:text-4xl text-center text-white hover:text-green-500 font-semibold pb-12 pt-6">Calculators for every question</h2>
+                <h2 class="text-[26px] sm:text-4xl text-center text-white hover:text-green-500 font-semibold pb-12 pt-6">All Financial Calculators</h2>
                 <div class="grid grid-cols-12 sm:gap-2  lg:gap-3 gap-6">
                     <div class=" col-span-12 sm:col-span-6">
                         <a href="{{ route('personal.loan') }}">
