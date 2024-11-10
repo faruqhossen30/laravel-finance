@@ -54,11 +54,10 @@
         <div class="grid grid-cols-12 py-12">
             <div class="col-span-5">
                 <div class=" space-y-6">
-                    <div class=" flex items-center space-x-3 text-sm">
-                        <img class='h-12' src="{{ asset('uploads/logo/' . $site->logo) }}" alt="Bankscope Logo" />
-                            srcSet="" />
-
+                    <div class="flex items-center space-x-3 text-sm">
+                        <img class="h-12" src="{{ asset('uploads/logo/' . $site->logo) }}" alt="{{ $site->name ?? 'Site Logo' }}" />
                     </div>
+
 
 
                     <p class="text-sm text-gray-800 leading-7 font-light dark:text-gray-400 capitalize">
