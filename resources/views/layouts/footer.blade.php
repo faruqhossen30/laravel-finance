@@ -55,7 +55,7 @@
             <div class="col-span-5">
                 <div class=" space-y-6">
                     <div class=" flex items-center space-x-3 text-sm">
-                        <img class='h-12' src="{{ asset('uploads/logo/' . $site->logo) }}" alt="dfgdh"
+                        <img class='h-12' src="{{ asset('uploads/logo/' . $site->logo) }}" alt="Bankscope Logo" />
                             srcSet="" />
 
                     </div>
