@@ -7,7 +7,7 @@
 
       <h2 class=" lg:mb-5 sm:text-5xl md:text-[54px] lg:py-0 capitalize text-slate-800 text-3xl lg:text-[44px] xl:text-5xl 2xl:text-6xl font-bold ">Your Guide to Loans and Credit
     </h2>
-      <p class="max-w-3xl  py-6 mx-auto mb-8 lg:py-1 text-justify sm:text-center lg:mb-10 text-slate-800 text-xl opacity-50">We provide expert insights, simple comparisons, and calculators for personal loans, mortgages, and credit card rates.
+      <p class="max-w-3xl  py-6 mx-auto mb-8 lg:py-1  sm:text-center lg:mb-10 text-slate-800 text-xl opacity-50">We provide expert insights, simple comparisons, and calculators for personal loans, mortgages, and credit card rates.
     </p>
     </div>
     <div class="max-w-6xl px-4 mx-auto">
@@ -22,7 +22,7 @@
                 alt="Image Description">
             </span>
             <h3 class="mb-6 text-2xl text-slate-800 font-semibold font-heading">{{$category->name}}</h3>
-            <p class="mb-8 text-gray-500">We made sure you get feedback the same day.</p>
+            <p class="mb-8 text-gray-500">{{$category->description ?? ''}}</p>
           </div>
         </div>
         @endforeach

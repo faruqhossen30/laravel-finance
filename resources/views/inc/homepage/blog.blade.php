@@ -24,10 +24,10 @@
                             {{ Str::words($blog->short_description, 15, '...') }}
                         </p>
                     </div>
-                    <div class="pb-2">
+                    {{-- <div class="pb-2">
                         <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">Badge</span>
 
-                    </div>
+                    </div> --}}
                     <div class="mt-auto flex items-center gap-x-3">
                         <img class="size-8 rounded-full"
                             src="{{asset('storage/' . $blog->user->thumbnail)}}"

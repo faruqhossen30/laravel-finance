@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
 use Image ;
+use Illuminate\Support\Facades\Storage;
 class CategoryController extends Controller
 {
     /**
@@ -57,6 +58,9 @@ class CategoryController extends Controller
             $file_name = $request->file('thumbnail')->store('thumbnail/category');
             $data['thumbnail'] = $file_name;
         }
+
+
+
         Category::create($data);
         Session::flash('create');
         return redirect()->route('category.index')->with('create',' Category Successfully Created');
@@ -88,24 +92,30 @@ class CategoryController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        if(!Auth::user()->can('category update')){
-            abort(403);
-        }
-        $data = [
-            'name'      => $request->name,
-            'slug'      => Str::slug($request->name),
-            'author_id' => Auth::user()->id,
-            'description' => $request->description,
-        ];
-        if($request->file('thumbnail')){
-            $file_name = $request->file('thumbnail')->store('thumbnail/category');
-            $data['thumbnail'] = $file_name;
-        }
 
+        $request->validate([
+            'name' => 'required|unique:categories,name,' . $id
+         ]);
 
-        Category::firstwhere('id', $id)->update($data);
-        Session::flash('warning');
-        return redirect()->route('category.index')->with('warning',' Category Successfully Updated');
+         $data = [
+             'name'=> $request->name,
+             'slug'=> Str::slug($request->name),
+             'description'=> $request->description,
+             'user_id'=> Auth::user()->id,
+         ];
+
+         $category = Category::firstwhere('id', $id);
+         if ($request->file('thumbnail')) {
+             if ($category->thumbnail != null && Storage::exists($category->thumbnail)) {
+                 Storage::delete($category->thumbnail);
+             }
+
+             $file_name = $request->file('thumbnail')->store('category');
+             $data['thumbnail'] = $file_name;
+         }
+
+         Category::firstwhere('id', $id)->update($data);
+         return to_route('category.index');
     }
 
     /**

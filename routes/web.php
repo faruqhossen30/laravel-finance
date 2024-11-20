@@ -33,7 +33,7 @@ Route::get('/test', function () {
 Route::get('/',[HomepageController::class,'index'])->name('homepage');
 Route::get('/blogs',[BlogpageController::class,'blogPage'])->name('blogpage');
 Route::get('/blogs/{slug}',[BlogpageController::class,'categoryBlogPage'])->name('blogpage.category');
-Route::get('/singleblog/{slug}',[SingleBlogController::class,'singleBlog'])->name('single.blog');
+Route::get('/blog/{slug}',[SingleBlogController::class,'singleBlog'])->name('single.blog');
 Route::get('/about',[ AboutpageController::class,'AboutPage'])->name('about.page');
 
 Route::get('/personal-loan',[PersonalLoneController::class,'personalLoan'])->name('personal.loan');
