@@ -55,16 +55,21 @@
 
                 </form>
                 <ul
-                    class="flex  flex-col  space-y-1 p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                    @foreach ($categories as $category)
-                        <li>
-                            <a href="{{ route('blogpage.category', $category->slug) }}"
-                                class="block py-2 px-3 text-white bg-[#00B13E] hover:text-[#00B13E] hover:bg-gray-100 rounded md:bg-transparent  md:p-0 md:dark:text-blue-500"
-                                aria-current="page">{{ $category->name }}</a>
-                        </li>
-                    @endforeach
+                class="flex flex-col space-y-1 p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                @foreach ($categories as $category)
+                    <li>
+                        <a href="{{ route('blogpage.category', $category->slug) }}"
+                            class="block py-2 px-3 text-white bg-[#00B13E]
+                                   sm:bg-white sm:text-[#00B13E]
+                                   hover:text-[#00B13E] hover:bg-gray-100
+                                   rounded
+                                   md:bg-transparent md:text-[#00B13E]
+                                   md:p-0 md:dark:text-[#00B13E]"
+                            aria-current="page">{{ $category->name }}</a>
+                    </li>
+                @endforeach
+            </ul>
 
-                </ul>
             </div>
         </div>
     </nav>
