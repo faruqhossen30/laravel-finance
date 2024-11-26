@@ -5,12 +5,12 @@
         <!-- Title -->
         <div class="mx-auto text-center mb-10 lg:mb-14">
             <h2 class="text-[24px] font-bold md:text-4xl md:leading-tight dark:text-white  py-3 md:py-12">Financial Resources</h2>
-            <p class="mt-1 text-gray-600 text-xl dark:text-neutral-400 text-center">Stay up-to-date with the latest insights from the experts. We cover all the latest information and expert opinions from financial professionals.</p>
+            <p class=" text-gray-600 text-xl text-justify dark:text-neutral-400 ">Stay up-to-date with the latest insights from the experts. We cover all the latest information and expert opinions from financial professionals.</p>
         </div>
         <!-- End Title -->
 
         <!-- Grid -->
-        <div class="grid grid-cols-12 gap-6">
+        <div class="grid grid-cols-12 gap-3 sm:gap-6">
             <!-- Card -->
             @foreach ($blogs as $blog)
                 <a class="col-span-12 sm:col-span-6 md:col-span-6 lg:col-span-4 group flex flex-col h-full border border-gray-200 hover:border-transparent hover:shadow-lg transition-all duration-300 rounded-xl p-5 dark:border-neutral-700 dark:hover:border-transparent dark:hover:shadow-black/40"

@@ -1,4 +1,6 @@
 @extends('layouts.app')
+
+@section('title', 'About Page')
 @section('content')
     <section class="overflow-hidden py-24">
         <div class="container mx-auto px-4">

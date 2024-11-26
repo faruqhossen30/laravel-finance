@@ -9,7 +9,7 @@
     <meta name="author" content="Themesberg">
     <meta name="generator" content="Hugo 0.122.0">
     <link rel="icon" type="image/x-icon" href="{{ asset('img/icon/Favicon.svg') }}">
-    <title>Website</title>
+    <title>@yield('title', 'Bankingscope')</title>
     <meta name="theme-color" content="#ffffff">
 
     <!-- Twitter -->
