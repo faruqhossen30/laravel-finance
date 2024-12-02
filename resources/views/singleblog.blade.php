@@ -1,3 +1,7 @@
+
+@php
+     $category = $blog->categories->first();
+@endphp
 @extends('layouts.app')
 @section('content')
     <!-- Blog Article -->
@@ -29,12 +33,15 @@
                                 <ul class="text-xs text-gray-500 dark:text-neutral-500">
                                     <li
                                         class="inline-block relative pe-6 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-2 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full dark:text-neutral-400 dark:before:bg-neutral-600">
-                                        {{ date('M d', strtotime($blog->created_at)) }}
+                                        {{ date('M d', strtotime($blog->updated_at)) }}
 
                                     </li>
+
+
+                                    {{$category->name}}
                                     <li
                                         class="inline-block relative pe-6 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-2 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full dark:text-neutral-400 dark:before:bg-neutral-600">
-                                        {{ $blog->created_at->diffForHumans() }}
+                                        {{$category->name}}
                                     </li>
                                 </ul>
                             </div>
@@ -110,8 +117,8 @@
 
         <div class="grid grid-cols-12">
             <div class="col-span-4">
-                @foreach ($relatedBlogs as $blog)
                 <!-- Card -->
+                @foreach ($relatedBlogs as $blog)
                 <a class="group flex flex-col h-full border border-gray-200 hover:border-transparent hover:shadow-lg transition-all duration-300 rounded-xl p-5 dark:border-neutral-700 dark:hover:border-transparent dark:hover:shadow-black/40"
                     href="{{route('single.blog',$blog->slug)}}">
                     <div class="aspect-w-16 aspect-h-11">
@@ -129,17 +136,19 @@
                     </div>
                     <div class="mt-auto flex items-center gap-x-3">
                         <img class="size-8 rounded-full"
-                            src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80"
+                            src={{ asset('storage/' . $blog->user->thumbnail) }}
                             alt="Image Description">
                         <div>
-                            <h5 class="text-sm text-gray-800 dark:text-neutral-200">By Lauren Waller</h5>
+                            <h5 class="text-sm text-gray-800 dark:text-neutral-200">By{{$blog->user->name}}</h5>
                         </div>
                     </div>
+
+
                 </a>
                 <!-- End Card -->
-            @endforeach
 
             </div>
+            @endforeach
         </div>
     </div>
     </div>

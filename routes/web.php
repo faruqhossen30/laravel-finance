@@ -38,9 +38,6 @@ Route::get('/about',[ AboutpageController::class,'AboutPage'])->name('about.page
 
 Route::get('/personal-loan',[PersonalLoneController::class,'personalLoan'])->name('personal.loan');
 Route::post('/personal-loan/calculate', [PersonalLoneController::class, 'calculate'])->name('lone.store');
-
-
-
 Route::get('search',[SearchpageController::class,'search'])->name('search');
 
 Route::middleware('auth')->group(function () {

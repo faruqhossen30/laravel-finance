@@ -30,8 +30,8 @@ class SingleBlogController extends Controller
 
         // Return the view with the blog and related blogs
 
-        // return  $relatedBlogs;
-        return view('singleblog', compact('blog', 'relatedBlogs'));
+        // return  $category;
+        return view('singleblog', compact('blog', 'category', 'relatedBlogs'));
 
 
     }
