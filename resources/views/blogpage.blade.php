@@ -1,4 +1,6 @@
 @extends('layouts.app')
+
+@section('title', 'Blogpage')
 @section('content')
     <!-- Card Blog -->
     <form action="" method="GET">

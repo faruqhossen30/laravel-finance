@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title', 'Homepage')
 @section('content')
     <!-- Hero -->
     @include('inc.homepage.herosection')

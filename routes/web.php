@@ -36,7 +36,7 @@ Route::get('/blogs/{slug}',[BlogpageController::class,'categoryBlogPage'])->name
 Route::get('/blog/{slug}',[SingleBlogController::class,'singleBlog'])->name('single.blog');
 Route::get('/about',[ AboutpageController::class,'AboutPage'])->name('about.page');
 
-Route::get('/personal-loan',[PersonalLoneController::class,'personalLoan'])->name('personal.loan');
+Route::get('/personal-loan-calculator',[PersonalLoneController::class,'personalLoan'])->name('personal.loan');
 Route::post('/personal-loan/calculate', [PersonalLoneController::class, 'calculate'])->name('lone.store');
 Route::get('search',[SearchpageController::class,'search'])->name('search');
 

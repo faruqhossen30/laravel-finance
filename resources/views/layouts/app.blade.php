@@ -9,7 +9,9 @@
     <meta name="author" content="Themesberg">
     <meta name="generator" content="Hugo 0.122.0">
     <link rel="icon" type="image/x-icon" href="{{ asset('img/icon/Favicon.svg') }}">
-    <title>@yield('title', 'Bankingscope')</title>
+
+
+    <title> @yield('title', '')</title>
     <meta name="theme-color" content="#ffffff">
 
     <!-- Twitter -->
@@ -19,16 +21,16 @@
     <meta name="twitter:title" content="Dashboard | Comment Jet">
     <meta name="twitter:description"
         content="Get started with a free and open-source admin dashboard layout built with Tailwind CSS and Flowbite featuring charts, widgets, CRUD layouts, authentication pages, and more">
-    <meta name="twitter:image" content="https://flowbite-admin-dashboard.vercel.app/">
+    <meta name="twitter:image" content="">
 
     <!-- Facebook -->
 
-    <meta property="og:url" content="https://flowbite-admin-dashboard.vercel.app/">
+    <meta property="og:url" content="">
     <meta property="og:title" content="Tailwind CSS Admin Dashboard - Flowbite">
     <meta property="og:description"
         content="Get started with a free and open-source admin dashboard layout built with Tailwind CSS and Flowbite featuring charts, widgets, CRUD layouts, authentication pages, and more">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://flowbite-admin-dashboard.vercel.app/images/og-image.png">
+    <meta property="og:image" content="">
     <meta property="og:image:type" content="image/png">
 
 

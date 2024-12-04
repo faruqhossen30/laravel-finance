@@ -4,9 +4,7 @@
         <div class=" container mx-auto">
             <h1 class="text-3xl font-medium px-3">Personal Loan Calculator</h1>
             {{-- <p class="px-3 py-8">Oct 05, 2023</p> --}}
-            <p class="p-2">This personal loan calculator will help you determine the monthly payments on a loan. To see
-                your estimated monthly payments and total interest you'll pay, just enter the loan amount, loan term and
-                interest rate in the fields below and click calculate. </p>
+            <p class="p-2">At BankingScoop, we provide a personal loan calculator to help you estimate your monthly loan payments with ease. Simply enter the loan amount, term, and interest rate in the fields provided, then click "Calculate" to see your estimated monthly payments and the total interest you’ll pay. We cover personal loan rates from US banks to keep you informed and up-to-date. </p>
             <form action="{{ route('lone.store') }}" method="post">
                 @csrf
                 <div class="grid grid-cols-12 lg:gap-6">
