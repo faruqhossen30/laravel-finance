@@ -57,7 +57,7 @@
             </div>
             <div class="space-y-5 md:space-y-8">
                 <div class="space-y-3">
-                    <p class="text-lg text-gray-800 dark:text-neutral-200">{!! $blog->description !!}</p>
+                    <p class="prose  text-lg text-gray-800 dark:text-neutral-200">{!! $blog->description !!}</p>
                 </div>
 
             </div>

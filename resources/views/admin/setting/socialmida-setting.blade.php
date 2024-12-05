@@ -152,7 +152,7 @@
                           </svg></span>
                     <input type="text" id="monogram_link" name="monogram_link"  value="{{ $site->monogram_link }}"
                         class="  block w-full border-gray-200 shadow-sm rounded-0 text-sm focus:border-0 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 focus:outline-none focus:ring-0"
-                        placeholder="https://monodeepsamanta.com/">
+                        placeholder="">
                 </div>
             </div>
             <div>

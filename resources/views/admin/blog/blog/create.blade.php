@@ -23,12 +23,12 @@
                         <div class="grid grid-cols-12 gap-5 ">
                             <div class="col-span-12 lg:col-span-8 bg-white dark:bg-gray-800 p-4 rounded-lg">
                                 <x-form.input label="Title" name="title" />
-                                <div class="py-2">
+                                {{-- <div class="py-2">
                                     <x-form.textarea label="Short Description" name="short_description" />
                                     @error('short_description')
                                         <p class="text-sm text-red-600 mt-2">{{ $message }}</p>
                                     @enderror
-                                </div>
+                                </div> --}}
                                 <x-form.select-status />
 
                                 <textarea name="description" class="ckeditor" id="editor" cols="30" rows="10"></textarea>
@@ -47,7 +47,7 @@
 
 
                                 <input class="dropify" type="file" id="myDropify" name="thumbnail">
-                                <x-form.textarea label="Project Description" name="project_description" />
+                                {{-- <x-form.textarea label="Project Description" name="project_description" /> --}}
                                 {{-- <div class="py-2"> --}}
                                 <label for="category_ids" class="block text-sm font-medium mb-2 dark:text-white">Select
                                     Categories</label>
