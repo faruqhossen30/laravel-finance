@@ -154,17 +154,17 @@
 
                 <div class="space-y-1">
 
-                    <p><a href="#" class='text-gray-800  dark:text-gray-400  capitalize  text-sm'>Terms of use</a>
+                    <p><a href="{{route('terms-of-use')}}" class='text-gray-800  dark:text-gray-400  capitalize  text-sm'>Terms of use</a>
                     </p>
-                    <p><a href="#" class='text-gray-800   dark:text-gray-400 capitalize  text-sm'>Privacy policy
+                    <p><a href="{{route('privacy-policy')}}" class='text-gray-800   dark:text-gray-400 capitalize  text-sm'>Privacy policy
                         </a></p>
                     <p><a href="#" class='text-gray-800  dark:text-gray-400  capitalize  text-sm'>Privacy preferences
                         </a></p>
 
-                    <p><a href="#" class='text-gray-800  dark:text-gray-400  capitalize  text-sm'>California privacy policy
+                    <p><a href="{{route('california-privacy-policy')}}" class='text-gray-800  dark:text-gray-400  capitalize  text-sm'>California privacy policy
 
                         </a></p>
-                    <p><a href="#" class='text-gray-800  dark:text-gray-400  capitalize  text-sm'>Do Not Sell or Share My Personal Information
+                    <p><a href="{{route('privacy')}}" class='text-gray-800  dark:text-gray-400  capitalize  text-sm'>Do Not Sell or Share My Personal Information
                         </a></p>
 
                 </div>
