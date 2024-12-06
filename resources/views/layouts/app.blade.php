@@ -14,6 +14,18 @@
     <title> @yield('title', '')</title>
     <meta name="theme-color" content="#ffffff">
 
+    <meta name="google-site-verification" content="w--CcEC0V--Llid42pL16emRabzV3o7VQfUEoUTNoOg" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GX7RZDZD0L"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-GX7RZDZD0L');
+    </script>
+
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@">
