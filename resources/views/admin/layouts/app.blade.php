@@ -9,7 +9,7 @@
     <meta name="author" content="Themesberg">
     <meta name="generator" content="Hugo 0.122.0">
 
-    <title>Dashboard | MONODEEP</title>
+    <title>Dashboard </title>
 
 
 

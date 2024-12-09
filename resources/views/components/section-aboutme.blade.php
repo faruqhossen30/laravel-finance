@@ -105,9 +105,9 @@ use App\Models\Setting\WebsiteSetting;
                     <p class="text-lg font-medium">Contact Me On</p>
                 </div>
                 <a class="block w-full bg-black hover:bg-[#FF003A] text-white text-center text-base py-2 rounded-md my-3"
-                    href="https://wa.me/+447810293819">Via What's App</a>
+                    href="#">Via What's App</a>
 
-                <a href="skype:monodeep123"
+                <a href="#"
                     class="block w-full bg-black hover:bg-[#FF003A] text-white text-center text-base py-2 rounded-md my-3">Via
                     Skype</a>
 

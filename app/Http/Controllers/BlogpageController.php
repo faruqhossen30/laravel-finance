@@ -13,11 +13,11 @@ class BlogpageController extends Controller
 
         $category = Category::firstWhere('slug', $slug);
         // return $category;
-        $blogs = Blog::whereHas('categories', function ($query) use ($category) {
+        $blogs = Blog::with('categories')->whereHas('categories', function ($query) use ($category) {
             return $query->where('category_id', $category->id);
         })->get();
-        // return $blogs;
-        return view('blogpagecategory', compact('blogs'));
+// return $category;
+        return view('blogpagecategory', compact('blogs','category'));
     }
 
 

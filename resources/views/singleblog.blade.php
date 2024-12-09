@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Blog')
+@section('title', $blog->meta_title )
 @section('content')
     <!-- Blog Article -->
     <div class="max-w-3xl px-4 pt-6 lg:pt-10 pb-12 sm:px-6 lg:px-8 mx-auto">
